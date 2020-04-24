@@ -11,6 +11,9 @@ class CommunityList extends HikRestApi
 
     protected $api = '/api/v1/estate/system/communities/actions/list';
 
+    public $method = 'GET';
+    public $header;
+
     protected $required_params = [
         'pageNo' => '',
         'pageSize' => ''

@@ -88,10 +88,7 @@ class HikRequest
             $response = $this->guzzle_client->request(
                 $this->hik_api->method,
                 $this->hik_api->uri,
-                [
-                    'headers' => $this->hik_api->headers,
-                    'form_params' => $this->hik_api->getParams(),
-                ]);
+                $this->hik_api->getOptions());
         } catch (RequestException $e) {
             $response = $e->getResponse();
             if ($response->getStatusCode() == '401') {
