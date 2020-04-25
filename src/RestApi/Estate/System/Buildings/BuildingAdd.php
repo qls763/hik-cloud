@@ -1,7 +1,7 @@
 <?php
 
 
-namespace HikCloud\RestApi\Estate\System\Communities;
+namespace HikCloud\RestApi\Estate\System\Buildings;
 
 
 use HikCloud\RestApi\HikRestApi;

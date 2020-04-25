@@ -20,7 +20,7 @@ class RoomDelete extends HikRestApi
 
     public function initUri()
     {
-        $this->api = preg_replace('/{roomId}/', $this->required_params['roomId'], $this->api);
+        $this->api = preg_replace('/{roomId}/', $this->request_params['roomId'], $this->api);
         parent::initUri();
     }
 

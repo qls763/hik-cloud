@@ -4,6 +4,8 @@
 namespace HikCloud\RestApi;
 
 
+use InvalidArgumentException;
+
 class HikRestCarApi extends HikRestApi
 {
     protected $api = '/';

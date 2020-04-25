@@ -1,7 +1,7 @@
 <?php
 
 
-namespace HikCloud\RestApi\Estate\System\Communities;
+namespace HikCloud\RestApi\Estate\System\Buildings;
 
 
 use HikCloud\RestApi\HikRestApi;
@@ -20,7 +20,7 @@ class BuildingDelete extends HikRestApi
 
     public function initUri()
     {
-        $this->api = preg_replace('/{buildingId}/', $this->required_params['buildingId'], $this->api);
+        $this->api = preg_replace('/{buildingId}/', $this->request_params['buildingId'], $this->api);
         parent::initUri();
     }
 

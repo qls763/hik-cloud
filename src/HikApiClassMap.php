@@ -20,8 +20,8 @@ class HikApiClassMap
 
         //房屋管理
         'Buildings' => [
-            'Add' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingsAdd',
-            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingsDelete'
+            'Add' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingAdd',
+            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingDelete'
         ],
 
         //单元管理
@@ -36,6 +36,44 @@ class HikApiClassMap
             'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomDelete',
             'Info' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomInfo',
             'InfoById' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomInfoById'
+        ],
+
+        //车辆社区管理
+        'Car'=>[
+            //社区
+            'Community' => [
+                'Add' => 'HikCloud\\RestApi\\Car\\Community\\CommunityAdd',
+                'Update' => 'HikCloud\\RestApi\\Car\\Community\\CommunityUpdate',
+                'Delete' => 'HikCloud\\RestApi\\Car\\Community\\CommunityDelete',
+                'List' => 'HikCloud\\RestApi\\Car\\Community\\CommunityList',
+                'Detail' => 'HikCloud\\RestApi\\Car\\Community\\CommunityDetail'
+            ],
+            //停车场
+            'Park' => [
+                'Add' => 'HikCloud\\RestApi\\Car\\Community\\Park\\ParkAdd',
+                'Update' => 'HikCloud\\RestApi\\Car\\Community\\Park\\ParkUpdate',
+                'Delete' => 'HikCloud\\RestApi\\Car\\Community\\Park\\ParkDelete',
+                'List' => 'HikCloud\\RestApi\\Car\\Community\\Park\\ParkList',
+            ],
+            //固定车辆
+            'Regulars' => [
+                'Add' => 'HikCloud\\RestApi\\Car\\Community\\Regulars\\RegularsAdd',
+                'Update' => 'HikCloud\\RestApi\\Car\\Community\\Regulars\\RegularsUpdate',
+                'Delete' => 'HikCloud\\RestApi\\Car\\Community\\Regulars\\RegularsDelete',
+                'List' => 'HikCloud\\RestApi\\Car\\Community\\Regulars\\RegularsList',
+            ],
+            //访客车辆
+            'Visitors' => [
+                'Add' => 'HikCloud\\RestApi\\Car\\Community\\Visitors\\VisitorsAdd',
+                'Delete' => 'HikCloud\\RestApi\\Car\\Community\\Visitors\\VisitorsDelete',
+                'List' => 'HikCloud\\RestApi\\Car\\Community\\Visitors\\VisitorsList',
+            ],
+            //黑名单
+            'Alarms' => [
+                'Add' => 'HikCloud\\RestApi\\Car\\Community\\Alarms\\AlarmsAdd',
+                'Update' => 'HikCloud\\RestApi\\Car\\Community\\Alarms\\AlarmsUpdate',
+                'Delete' => 'HikCloud\\RestApi\\Car\\Community\\Alarms\\AlarmsDelete',
+            ]
         ]
     ];
 

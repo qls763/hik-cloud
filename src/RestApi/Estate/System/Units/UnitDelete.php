@@ -20,7 +20,7 @@ class UnitDelete extends HikRestApi
 
     public function initUri()
     {
-        $this->api = preg_replace('/{unitId}/', $this->required_params['unitId'], $this->api);
+        $this->api = preg_replace('/{unitId}/', $this->request_params['unitId'], $this->api);
         parent::initUri();
     }
 

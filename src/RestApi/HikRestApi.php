@@ -77,8 +77,10 @@ class HikRestApi
         if (!isset($this->required_params[$key]) && !isset($this->optional_params[$key])) {
             throw new InvalidArgumentException("unexpected request parameter [{$key}]");
         }
-        if ($value === '' || $value === null) {
-            throw new InvalidArgumentException("parameter [{$key}] cannot be empty");
+        if(isset($this->required_params[$key])){
+            if ($value === '' || $value === null) {
+                throw new InvalidArgumentException("parameter [{$key}] cannot be empty");
+            }
         }
     }
 
@@ -124,7 +126,7 @@ class HikRestApi
             $option['query'] = $this->getParams();
         }
         if($this->method === 'POST'){
-            $option['form_params'] = $this->getParams();
+            $option['json'] = $this->getParams();
         }
         if($this->method === 'DELETE'){
 

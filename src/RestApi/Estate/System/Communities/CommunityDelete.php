@@ -20,7 +20,7 @@ class CommunityDelete extends HikRestApi
 
     public function initUri()
     {
-        $this->api = preg_replace('/{communityId}/', $this->required_params['communityId'], $this->api);
+        $this->api = preg_replace('/{communityId}/', $this->request_params['communityId'], $this->api);
         parent::initUri();
     }
 
