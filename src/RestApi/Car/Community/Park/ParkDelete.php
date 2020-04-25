@@ -12,7 +12,6 @@ class ParkDelete extends HikRestApi
     protected $api = '/api/v1/community/park/delete';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'parkIds' => '',

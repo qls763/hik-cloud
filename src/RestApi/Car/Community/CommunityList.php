@@ -12,7 +12,6 @@ class CommunityList extends HikRestCarApi
     protected $api = '/api/v1/community/list';
 
     public $method = 'GET';
-    public $header;
 
     protected $required_params = [
         'pageNo' => '',

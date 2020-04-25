@@ -12,7 +12,6 @@ class BuildingDelete extends HikRestApi
     protected $api = '/api/v1/estate/system/buildings/{buildingId}';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'buildingId' => '',

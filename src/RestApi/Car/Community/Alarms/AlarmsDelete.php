@@ -12,7 +12,6 @@ class AlarmsDelete extends HikRestCarApi
     protected $api = '/api/v1/community/vehicle/cars/alarms/delete';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

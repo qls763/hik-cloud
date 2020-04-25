@@ -12,7 +12,6 @@ class RegularsAdd extends HikRestCarApi
     protected $api = '/api/v1/community/vehicle/cars/regulars/add';
 
     public $method = 'PUT';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

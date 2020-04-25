@@ -12,7 +12,6 @@ class CommunityDelete extends HikRestCarApi
     protected $api = '/api/v1/community/delete';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'communityIds' => '',

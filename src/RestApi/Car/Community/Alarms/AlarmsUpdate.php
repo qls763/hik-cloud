@@ -12,7 +12,6 @@ class AlarmsUpdate extends HikRestCarApi
     protected $api = '/api/v1/community/vehicle/cars/alarms/update';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

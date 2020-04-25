@@ -12,7 +12,6 @@ class RoomDelete extends HikRestApi
     protected $api = '/api/v1/estate/system/rooms/{roomId}';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'roomId' => '',

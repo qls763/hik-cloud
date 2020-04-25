@@ -11,7 +11,6 @@ class ParkUpdate extends HikRestApi
     protected $api = '/api/v1/community/park/update';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

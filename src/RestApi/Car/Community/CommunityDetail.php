@@ -12,7 +12,6 @@ class CommunityDetail extends HikRestCarApi
     protected $api = '/api/v1/community/detail';
 
     public $method = 'GET';
-    public $header;
 
     protected $required_params = [
         'communityId' => ''

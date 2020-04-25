@@ -12,7 +12,6 @@ class ParkAdd extends HikRestCarApi
     protected $api = '/api/v1/community/park/add';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'parkName' => '',

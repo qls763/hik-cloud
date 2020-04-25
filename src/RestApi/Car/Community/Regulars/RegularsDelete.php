@@ -12,7 +12,6 @@ class RegularsDelete extends HikRestCarApi
     protected $api = '/api/v1/community/vehicle/cars/regulars/delete';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

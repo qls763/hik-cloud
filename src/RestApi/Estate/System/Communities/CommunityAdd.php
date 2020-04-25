@@ -9,7 +9,6 @@ class CommunityAdd extends HikRestApi
     protected $api = '/api/v1/estate/system/communities';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'communityName' => '',

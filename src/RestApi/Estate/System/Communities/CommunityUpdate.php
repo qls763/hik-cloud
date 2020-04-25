@@ -10,7 +10,6 @@ class CommunityUpdate extends HikRestApi
     protected $api = '/api/v1/estate/system/communities/actions/updateCommunity';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

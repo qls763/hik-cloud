@@ -12,7 +12,6 @@ class BuildingAdd extends HikRestApi
     protected $api = '/api/v1/estate/system/buildings';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

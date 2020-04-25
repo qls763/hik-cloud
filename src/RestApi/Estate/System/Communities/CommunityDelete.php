@@ -12,7 +12,6 @@ class CommunityDelete extends HikRestApi
     protected $api = '/api/v1/estate/system/communities/{communityId}';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

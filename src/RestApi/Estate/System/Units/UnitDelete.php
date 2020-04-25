@@ -12,7 +12,6 @@ class UnitDelete extends HikRestApi
     protected $api = '/api/v1/estate/system/units/{unitId}';
 
     public $method = 'DELETE';
-    public $header;
 
     protected $required_params = [
         'unitId' => '',

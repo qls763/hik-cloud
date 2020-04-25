@@ -12,7 +12,6 @@ class VisitorsAdd extends HikRestCarApi
     protected $api = '/api/v1/community/vehicle/cars/visitors/add';
 
     public $method = 'PUT';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

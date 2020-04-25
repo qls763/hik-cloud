@@ -11,7 +11,6 @@ class CarToken extends HikRestCarApi
     protected $api = '/oauth/token';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'client_id' => '',
@@ -30,7 +29,7 @@ class CarToken extends HikRestCarApi
 
     public function initHeaders()
     {
-        $this->header = [
+        $this->headers = [
             "Host" => "pbapi.hik-cloud.com",
             "Content-Type" => "application/x-www-form-urlencoded"
         ];

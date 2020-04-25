@@ -12,7 +12,6 @@ class RegularsUpdate extends HikRestCarApi
     protected $api = '/api/v1/community/vehicle/cars/regulars/update';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

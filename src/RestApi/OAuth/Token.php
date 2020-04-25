@@ -9,7 +9,6 @@ class Token extends HikRestApi
     protected $api = '/oauth/token';
 
     public $method = 'POST';
-    public $header;
 
     protected $required_params = [
         'client_id' => '',
@@ -28,10 +27,18 @@ class Token extends HikRestApi
 
     public function initHeaders()
     {
-        $this->header = [
+        $this->headers = [
             "Host" => "api2.hik-cloud.com",
             "Content-Type" => "application/x-www-form-urlencoded"
         ];
+    }
+
+    public function getOptions(){
+        $option = [
+            'headers' => $this->headers
+        ];
+        $option['form_params'] = $this->getParams();
+        return $option;
     }
 
 }

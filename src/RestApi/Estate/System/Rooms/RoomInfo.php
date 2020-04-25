@@ -12,7 +12,6 @@ class RoomInfo extends HikRestApi
     protected $api = '/api/v1/estate/system/rooms/actions/info';
 
     public $method = 'GET';
-    public $header;
 
     protected $required_params = [
         'communityId' => '',

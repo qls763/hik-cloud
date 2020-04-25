@@ -40,6 +40,10 @@ class HikApiClassMap
 
         //车辆社区管理
         'Car'=>[
+            //授权
+            'OAuth' => [
+                'Token' => 'HikCloud\\RestApi\\OAuth\\CarToken'
+            ],
             //社区
             'Community' => [
                 'Add' => 'HikCloud\\RestApi\\Car\\Community\\CommunityAdd',
