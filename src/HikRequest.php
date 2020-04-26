@@ -99,7 +99,7 @@ class HikRequest
             }
         }
 
-        return json_decode(strval($response->getBody()->getContents()),true);
+        return json_decode(strval($response->getBody()->getContents()), true);
     }
 
     /**
@@ -115,5 +115,4 @@ class HikRequest
     public function sendMultiRequest()
     {
     }
-
 }

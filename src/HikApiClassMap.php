@@ -37,6 +37,30 @@ class HikApiClassMap
             'Info' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomInfo',
             'InfoById' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomInfoById'
         ],
+        //住户管理
+        'Person'=>[
+            'Add' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonAdd',
+            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonDelete',
+            'Update' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonUpdate',
+            'CommunityAdd' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonCommunityAdd',
+            'CommunityDelete' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonCommunityDelete',
+            'RoomAdd' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonRoomAdd',
+            'RoomDelete' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonRoomDelete',
+            'RoomList' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonRoomList'
+        ],
+
+        //物业管理
+        'Property'=>[
+            'Add' => 'HikCloud\\RestApi\\Estate\\System\\Property\\PropertyAdd',
+            'Update' => 'HikCloud\\RestApi\\Estate\\System\\Property\\PropertyUpdate',
+            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Property\\PropertyDelete',
+        ],
+
+        //访客管理
+        'Visitors'=>[
+            'Add' => 'HikCloud\\RestApi\\Estate\\Visitors\\VisitorAdd',
+            'Delete' => 'HikCloud\\RestApi\\Estate\\Visitors\\VisitorDelete',
+        ],
 
         //车辆社区管理
         'Car'=>[
