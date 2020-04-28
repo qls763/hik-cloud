@@ -9,17 +9,17 @@ use HikCloud\RestApi\HikRestApi;
 class UnitAdd extends HikRestApi
 {
 
-    protected $api = '/api/v1/estate/system/rooms';
+    protected $api = '/api/v1/estate/system/units';
 
     public $method = 'POST';
 
     protected $required_params = [
         'buildingId' => '',
-        'unitName' => '',
         'unitNumber' => ''
     ];
 
     protected $optional_params = [
+        'unitName' => '',
         'unionId' => ''
     ];
 }
