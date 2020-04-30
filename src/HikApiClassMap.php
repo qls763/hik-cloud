@@ -62,6 +62,11 @@ class HikApiClassMap
             'Delete' => 'HikCloud\\RestApi\\Estate\\Visitors\\VisitorDelete',
         ],
 
+        //访客管理
+        'Devices'=>[
+            'List' => 'HikCloud\\RestApi\\Estate\\Devices\\DeviceList',
+        ],
+
         //车辆社区管理
         'Car'=>[
             //授权
@@ -102,6 +107,11 @@ class HikApiClassMap
                 'Update' => 'HikCloud\\RestApi\\Car\\Community\\Alarms\\AlarmsUpdate',
                 'Delete' => 'HikCloud\\RestApi\\Car\\Community\\Alarms\\AlarmsDelete',
             ]
+        ],
+
+        //停车云
+        'Parking' => [
+            'GetParkingInfos' => 'HikCloud\\RestApi\\Parking\\Cloud\\Service\\GetParkingInfos', //分页获取停车场
         ]
     ];
 
