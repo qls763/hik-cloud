@@ -14,13 +14,13 @@ class PersonAdd extends HikRestApi
 
     protected $required_params = [
         'personName' => '',
-        'gender' => '',
         'credentialType' => '',
         'credentialNumber' => '',
         'mobile' => ''
     ];
 
     protected $optional_params = [
+        'gender' => '',
         'birthday' => '',
         'personRemark' => '',
         'nation' => '',

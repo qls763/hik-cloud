@@ -46,7 +46,8 @@ class HikApiClassMap
             'CommunityDelete' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonCommunityDelete',
             'RoomAdd' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonRoomAdd',
             'RoomDelete' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonRoomDelete',
-            'RoomList' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonRoomList'
+            'RoomList' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonRoomList',
+            'InfoList' => 'HikCloud\\RestApi\\Estate\\System\\Person\\PersonInfoList'
         ],
 
         //物业管理
@@ -65,6 +66,14 @@ class HikApiClassMap
         //访客管理
         'Devices'=>[
             'List' => 'HikCloud\\RestApi\\Estate\\Devices\\DeviceList',
+        ],
+
+        //门禁
+        'EntranceGuard'=>[
+            'DeviceList' => 'HikCloud\\RestApi\\Estate\\EntranceGuard\\Actions\\DeviceList',
+            'FaceIssued' => 'HikCloud\\RestApi\\Estate\\EntranceGuard\\Actions\\FaceIssued',
+            'DeleteFaceIssued' => 'HikCloud\\RestApi\\Estate\\EntranceGuard\\Actions\\DeleteFaceIssued',
+            'GateControl' => 'HikCloud\\RestApi\\Estate\\EntranceGuard\\Actions\\GateControl'
         ],
 
         //车辆社区管理
