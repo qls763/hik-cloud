@@ -19,6 +19,7 @@ class RoomAdd extends HikRestApi
     ];
 
     protected $optional_params = [
+        'roomName' => '',
         'unionId' => ''
     ];
 }
