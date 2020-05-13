@@ -15,14 +15,14 @@ class PersonUpdate extends HikRestApi
 
     protected $required_params = [
         'personId' => '',
+    ];
+//“姓名”+“手机号”或者“证件类型”+“证件号码”至少有一组信息完整
+    protected $optional_params = [
         'personName' => '',
-        'gender' => '',
         'credentialType' => '',
         'credentialNumber' => '',
-        'mobile' => ''
-    ];
-
-    protected $optional_params = [
+        'mobile' => '',
+        'gender' => '',
         'birthday' => '',
         'personRemark' => '',
         'nation' => '',

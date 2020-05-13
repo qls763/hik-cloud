@@ -51,9 +51,9 @@ class HikRestApi
     /**
      * 检查请求参数
      * @param string $key
-     * @param string $value
+     * @param $value
      */
-    private function setReqParam(string $key, string $value)
+    private function setReqParam(string $key, $value)
     {
         // 参数通用检查规则
         $this->generalCheckReqParam($key, $value);
@@ -63,8 +63,9 @@ class HikRestApi
         if (method_exists($this, $check_func)) {
             $this->$check_func($value);
         }
-
-        $this->request_params[$key] = $value;
+        if($value !== '' && $value !== null){
+            $this->request_params[$key] = $value;
+        }
     }
 
     /**
@@ -77,8 +78,8 @@ class HikRestApi
         if (!isset($this->required_params[$key]) && !isset($this->optional_params[$key])) {
             throw new InvalidArgumentException("unexpected request parameter [{$key}]");
         }
-        if(isset($this->required_params[$key])){
-            if ($value === '' || $value === null) {
+        if ($value === '' || $value === null) {
+            if(isset($this->required_params[$key])) {
                 throw new InvalidArgumentException("parameter [{$key}] cannot be empty");
             }
         }

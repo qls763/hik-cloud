@@ -21,6 +21,7 @@ class PersonRoomAdd extends HikRestApi
     ];
 
     protected $optional_params = [
-        'checkOutDate' => ''
+        'checkOutDate' => '',
+        'isAudit' => ''
     ];
 }

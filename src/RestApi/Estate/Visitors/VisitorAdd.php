@@ -24,6 +24,7 @@ class VisitorAdd extends HikRestApi
     ];
 
     protected $optional_params = [
-        'visitReason' => ''
+        'visitReason' => '',
+        'deviceIds' => ''
     ];
 }
