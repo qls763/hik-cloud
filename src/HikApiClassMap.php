@@ -21,13 +21,15 @@ class HikApiClassMap
         //房屋管理
         'Buildings' => [
             'Add' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingAdd',
-            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingDelete'
+            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingDelete',
+            'List' => 'HikCloud\\RestApi\\Estate\\System\\Buildings\\BuildingList'
         ],
 
         //单元管理
         'Units' => [
             'Add' => 'HikCloud\\RestApi\\Estate\\System\\Units\\UnitAdd',
-            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Units\\UnitDelete'
+            'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Units\\UnitDelete',
+            'List' => 'HikCloud\\RestApi\\Estate\\System\\Units\\UnitList'
         ],
 
         //户室管理
@@ -35,7 +37,9 @@ class HikApiClassMap
             'Add' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomAdd',
             'Delete' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomDelete',
             'Info' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomInfo',
-            'InfoById' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomInfoById'
+            'InfoById' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomInfoById',
+            'List' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomList',
+            'ListByCommunityId' => 'HikCloud\\RestApi\\Estate\\System\\Rooms\\RoomCommunityList'
         ],
         //住户管理
         'Person'=>[
