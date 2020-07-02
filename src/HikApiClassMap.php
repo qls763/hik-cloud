@@ -125,6 +125,33 @@ class HikApiClassMap
         //停车云
         'Parking' => [
             'GetParkingInfos' => 'HikCloud\\RestApi\\Parking\\Cloud\\Service\\GetParkingInfos', //分页获取停车场
+        ],
+
+        // 设备管理
+        'Devices' => [
+            'Add' => 'HikCloud\\RestApi\\Devices\\AddDevice',
+            'Delete' => 'HikCloud\\RestApi\\Devices\\DeleteDevice',
+            'List' => 'HikCloud\\RestApi\\Devices\\DeviceList',
+            'Info' => 'HikCloud\\RestApi\\Devices\\DeviceInfo',
+            'Update' => 'HikCloud\\RestApi\\Devices\\UpdateDevice',
+            'Count' => 'HikCloud\\RestApi\\Devices\\DeviceCount',
+            'SetDefence' => 'HikCloud\\RestApi\\Devices\\SetDeviceDefence',
+            // 视频直播
+            'Live' => [
+                'EncryptOff' => 'HikCloud\\RestApi\\Devices\\DeviceEncryptOff',
+                'VideoOpen' => 'HikCloud\\RestApi\\Devices\\LiveVideoOpen',
+                'Address' => 'HikCloud\\RestApi\\Devices\\LiveAddress',
+                'AddressLimit' => 'HikCloud\\RestApi\\Devices\\LiveAddressLimit',
+            ],
+        ],
+
+        // 通道管理
+        'Channels' => [
+            'List' => 'HikCloud\\RestApi\\Channels\\ChannelList',
+            'Update' => 'HikCloud\\RestApi\\Channels\\UpdateChannel',
+            'Osd' => 'HikCloud\\RestApi\\Channels\\ChannelOsd',
+            'Capture' => 'HikCloud\\RestApi\\Channels\\ChannelCapture',
+            'SynchChannels' => 'HikCloud\\RestApi\\Channels\\SynchDeviceChannels',
         ]
     ];
 
