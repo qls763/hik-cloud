@@ -70,6 +70,20 @@ class HikApiClassMap
         //访客管理
         'Devices'=>[
             'List' => 'HikCloud\\RestApi\\Estate\\Devices\\DeviceList',
+            'OutAdd' => 'HikCloud\\RestApi\\Devices\\AddDevice',
+            'OutDelete' => 'HikCloud\\RestApi\\Devices\\DeleteDevice',
+            'OutList' => 'HikCloud\\RestApi\\Devices\\DeviceList',
+            'OutInfo' => 'HikCloud\\RestApi\\Devices\\DeviceInfo',
+            'OutUpdate' => 'HikCloud\\RestApi\\Devices\\UpdateDevice',
+            'OutCount' => 'HikCloud\\RestApi\\Devices\\DeviceCount',
+            'OutSetDefence' => 'HikCloud\\RestApi\\Devices\\SetDeviceDefence',
+            // 视频直播
+            'Live' => [
+                'EncryptOff' => 'HikCloud\\RestApi\\Devices\\DeviceEncryptOff',
+                'VideoOpen' => 'HikCloud\\RestApi\\Devices\\LiveVideoOpen',
+                'Address' => 'HikCloud\\RestApi\\Devices\\LiveAddress',
+                'AddressLimit' => 'HikCloud\\RestApi\\Devices\\LiveAddressLimit',
+            ],
         ],
 
         //门禁
@@ -125,24 +139,6 @@ class HikApiClassMap
         //停车云
         'Parking' => [
             'GetParkingInfos' => 'HikCloud\\RestApi\\Parking\\Cloud\\Service\\GetParkingInfos', //分页获取停车场
-        ],
-
-        // 设备管理
-        'Devices' => [
-            'Add' => 'HikCloud\\RestApi\\Devices\\AddDevice',
-            'Delete' => 'HikCloud\\RestApi\\Devices\\DeleteDevice',
-            'List' => 'HikCloud\\RestApi\\Devices\\DeviceList',
-            'Info' => 'HikCloud\\RestApi\\Devices\\DeviceInfo',
-            'Update' => 'HikCloud\\RestApi\\Devices\\UpdateDevice',
-            'Count' => 'HikCloud\\RestApi\\Devices\\DeviceCount',
-            'SetDefence' => 'HikCloud\\RestApi\\Devices\\SetDeviceDefence',
-            // 视频直播
-            'Live' => [
-                'EncryptOff' => 'HikCloud\\RestApi\\Devices\\DeviceEncryptOff',
-                'VideoOpen' => 'HikCloud\\RestApi\\Devices\\LiveVideoOpen',
-                'Address' => 'HikCloud\\RestApi\\Devices\\LiveAddress',
-                'AddressLimit' => 'HikCloud\\RestApi\\Devices\\LiveAddressLimit',
-            ],
         ],
 
         // 通道管理
