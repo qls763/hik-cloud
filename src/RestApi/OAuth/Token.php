@@ -6,7 +6,7 @@ use HikCloud\RestApi\HikRestApi;
 
 class Token extends HikRestApi
 {
-    protected $api = '/oauth/token';
+    protected $api = '/api/v1/auth/open/oauth/token'; //'/oauth/token';
 
     public $method = 'POST';
 

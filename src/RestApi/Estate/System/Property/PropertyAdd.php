@@ -9,7 +9,7 @@ use HikCloud\RestApi\HikRestApi;
 class PropertyAdd extends HikRestApi
 {
 
-    protected $api = '/api/v1/estate/system/property';
+    protected $api = '/api/v1/auth/open/neptune/property';//'/api/v1/estate/system/property';
 
     public $method = 'POST';
 
@@ -20,6 +20,7 @@ class PropertyAdd extends HikRestApi
     ];
 
     protected $optional_params = [
-        'userName' => '',
+//        'userName' => '',
+        'personName' => ''
     ];
 }

@@ -9,7 +9,7 @@ use HikCloud\RestApi\HikRestApi;
 class PropertyDelete extends HikRestApi
 {
 
-    protected $api = '/api/v1/estate/system/property/{personId}';
+    protected $api = '/api/v1/auth/open/neptune/property/{personId}';//'/api/v1/estate/system/property/{personId}';
 
     public $method = 'DELETE';
 
